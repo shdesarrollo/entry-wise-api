@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: entrywise
+
+# Database configuration
+  datasource:
+    url: jdbc:postgresql://localhost:5432/entry-wise-local
+    driver-class-name: org.postgresql.Driver
+    username: entrywise
+    password: admin
+
+# Hibernate configuration
+    jpa:
+      database-platform: org.hibernate.dialect.PostgreSQLDialect
+      hibernate:
+        ddl-auto: update
+      show-sql: true
